@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title data-i18n="home">Retro-games: the podcast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 data-i18n="home">Retro-games: the podcast</h1>
+    <nav>
+      <a href="about.html" data-i18n="about">Chi Siamo</a>
+      <button id="settingsBtn" data-i18n="settings">Impostazioni</button>
+      <button id="toggleNightMode" data-i18n="nightMode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="featured">
+      <h2 data-i18n="featured">Episodio in Evidenza</h2>
+      <div id="randomEpisode"></div>
+    </section>
+
+    <section id="episodes">
+      <h2 data-i18n="allEpisodes">Tutti gli Episodi</h2>
+      <div id="episodeList"></div>
+    </section>
+  </main>
+
+  <div id="settingsModal" class="hidden">
+    <form id="settingsForm">
+      <label for="language" data-i18n="languageLabel">Lingua</label>
+      <select id="language">
+        <option value="it">Italiano</option>
+        <option value="en">English</option>
+      </select>
+      <br>
+      <label for="fontType" data-i18n="fontLabel">Tipo di font</label>
+      <select id="fontType">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+      <br>
+      <button id="savePreferences" type="submit" data-i18n="saveBtn">Salva</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
